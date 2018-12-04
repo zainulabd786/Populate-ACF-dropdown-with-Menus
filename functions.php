@@ -5,7 +5,7 @@ function acf_load_menu_field_choices( $field ) {
     $field['choices'] = array();
 
     $menus = get_terms( 'nav_menu', array( 'hide_empty' => true ) );
-    //$menus = get_registered_nav_menus();
+    //$menus = get_registered_nav_menus();  //uncomment this if you want to populate the dropdown with all Menu Locations
     $blank_list = json_encode(array( "name" => "Default Menu", "term_id" => "")); 
     $blank_list = json_decode($blank_list);
     array_unshift($menus, $blank_list);

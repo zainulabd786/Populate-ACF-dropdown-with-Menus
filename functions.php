@@ -1,3 +1,4 @@
+<?php
 function acf_load_menu_field_choices( $field ) {
     
     // reset choices
